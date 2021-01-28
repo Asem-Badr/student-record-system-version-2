@@ -5,6 +5,7 @@
 
 void run_system()
 {
+    init_data() ;
     welcome_message();
     print_main_menu();
     take_action();
@@ -84,6 +85,8 @@ static void view_all()
 {
     system("cls");
     printf("---------------Viewing all students' records-----------------\n");
+    view_all_data();
+
 
 }
 
@@ -91,6 +94,7 @@ static void return_to_main()
 {
     int userInput ;
     printf("Enter 1 to return to main or 0 to exit ");
+    userInput = get_int() ;
     if (userInput == 1 )
     {
         system("cls");
