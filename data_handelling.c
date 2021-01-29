@@ -72,7 +72,7 @@ int cheack_available_id(int id)
  }
 void view_all_data()
 {
-    int size = list_size();
+    int size = list_size(l);
     int i ;
     Student s ;
     for (i=0 ;i<size ;i++ )
